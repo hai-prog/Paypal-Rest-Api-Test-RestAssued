@@ -104,8 +104,7 @@ public class Test_CRUDOrderSuccessfully {
     }
 
 
-    @Test(description = "A successful get request to check if the order is created : returns the HTTP 200 Created status",
-            dependsOnMethods = "validateSuccessfulPostRequestWithDetailedRequest")
+    @Test(description = "A successful get request to check if the order is created : returns the HTTP 200 Created status", dependsOnMethods = "validateSuccessfulPostRequestWithDetailedRequest")
     public void validateSuccessfulGetRequest() {
 
         var response = orderTransactions.getOrder(orderID);
@@ -117,36 +116,4 @@ public class Test_CRUDOrderSuccessfully {
 
 
 }
-
-//    @Test(description = "A successful request : create order with minimal request returns the HTTP 201 Created status")
-//    public void validateSuccessfulPostRequestTC2() {
-//
-//        //postRequest = new PostRequest(PaypalServer.uri, PaypalServer.ordersEndPoint);
-//
-//        String requestBody = """
-//                {
-//                     "intent": "CAPTURE",
-//                     "purchase_units": [
-//                         {
-//                             "amount": {
-//                                 "currency_code": "USD",
-//                                 "value": "100.00"
-//                             }
-//                         }
-//                     ]
-//                 }
-//                """;
-//
-//        postRequest.addHeader("Authorization", "Bearer " + accessToken);
-//        postRequest.addHeader("Prefer", "return=representation");
-//        postRequest.addHeader("PayPal-Request-Id", "A v4 style guid");
-//        postRequest.addBody(requestBody);
-//        Response response = postRequest.send();
-//
-//
-//        // assertions
-//        softAssert.assertEquals(response.statusCode(), 200);
-//        softAssert.assertEquals(response.jsonPath().getString("status"), "CREATED");
-//        softAssert.assertAll();
-//    }
 

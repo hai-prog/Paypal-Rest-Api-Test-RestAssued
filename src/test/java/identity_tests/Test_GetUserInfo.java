@@ -66,16 +66,6 @@ public class Test_GetUserInfo {
 
 }
 
-//    @Test(description = "A successful request returns the HTTP 200 OK status")
-//    public void validateSuccessfulRequest() {
-//
-//        getRequest.addHeader("Authorization", "Bearer " + accessToken);
-//        getRequest.addQueryParameter("schema", "paypalv1.1");
-//        Response response = getRequest.send();
-//
-//        // assertions
-//        Assert.assertEquals(response.statusCode(), 200);
-//    }
 
 //    @Test(description = "Invalid request. The schema parameter is not valid.")
 //    public void validateErrorHandlingWithIncorrectParam1() {

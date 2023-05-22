@@ -23,11 +23,11 @@ public abstract class APIRequest {
     }
 
     public void addQueryParameter(String param, String value) {
-        requestSpecification.queryParam(param,value);
+        requestSpecification.queryParam(param, value);
     }
 
     public void addPathParameter(String param, String value) {
-        requestSpecification.pathParam(param,value);
+        requestSpecification.pathParam(param, value);
 
     }
 
