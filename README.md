@@ -40,7 +40,7 @@ Before running the tests, make sure you have the following prerequisites set up:
 - A suitable integrated development environment (IDE) such as IntelliJ or Eclipse.
 - Maven installed to manage project dependencies.
 - RestAssured library added to your project's dependencies.
-- SHAFT_ENGINE framework configured in your project.
+- SHAFT_ENGINE template configured in your project.
 
 The SHAFT_ENGINE is required for test automation and provides additional capabilities for reporting, logging, and test management.
 
