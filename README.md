@@ -39,7 +39,6 @@ Before running the tests, make sure you have the following prerequisites set up:
 - Java Development Kit (JDK) installed on your machine.
 - A suitable integrated development environment (IDE) such as IntelliJ or Eclipse.
 - Maven installed to manage project dependencies.
-- RestAssured library added to your project's dependencies.
 - SHAFT_ENGINE template configured in your project.
 
 The SHAFT_ENGINE is required for test automation and provides additional capabilities for reporting, logging, and test management.
@@ -54,7 +53,13 @@ To get started with the project, follow these steps:
 
 2. Import the project into your preferred IDE.
 
-3. Install the required dependencies specified in the `pom.xml` file using Maven.
+3.  you need to edit your run configuration templates(to use SHAFT_ENGINE template) before running your tests by following these steps:
+   - Open 'Edit Run/Debug Configurations' dialog > Edit Configurations... > Edit configuration templates...
+   - Select TestNG > Listeners > and add these listeners one by one:
+     com.shaft.listeners.TestNGListener
+   - Select Cucumber Java > Program Arguments > and add this argument:
+   --plugin com.shaft.listeners.CucumberFeatureListener
+   - After saving the changes, remember to delete any old test runs you may have triggered by mistake before adding the needed config. 
 
 4. Set up the necessary configurations in the project, such as API credentials, access tokens, etc. Refer to the appropriate package classes (e.g., `authorization`) to configure authentication.
 
