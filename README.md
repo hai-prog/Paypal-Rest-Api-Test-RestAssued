@@ -79,8 +79,6 @@ To execute the tests, follow these steps:
 ## Reporting
 
 The project is configured to generate test reports in the `target/surefire-reports` directory after test execution. You can view the reports in HTML format to check the test results and any failures.
-## Allure report
-![image](https://github.com/hai-prog/Paypal-Rest-Api-Test-RestAssued/assets/70084945/e9c2719a-510a-45b2-87e4-fabd9e79faf5)
 
 ## Acknowledgements
 
